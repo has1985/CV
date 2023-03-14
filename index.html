@@ -6,60 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CV, Husarev, work">
     <meta name="description" content="Резюме Гусарева Александра">
+    <link rel="stylesheet" href="styles.css">
     <title>Husarev Alexandr CV</title>
 </head>
 <body>
-  <img src="img/avatar.jpg" width="200" alt="здесь должна быть аватара">
+<div class="container">
+<div class="info">
+        <img src="img/avatar.jpg" alt="здесь должна быть аватара" class="avatar">
+    <div class="info-text">
   <h1>Александр Гусарев</h1>
   <p>Я работаю go разработчиком в компании <strong>GlockApps</strong></p>
   <p>Я люблю <em>путешествовать, программировать, изучать что-то новое</em></p>
 
-  <h2>Мои хобби</h2>
-  <ul>
-      <li>Путешествия</li>
-      <li>Спорт</li>
-  </ul>
-
-  <table>
-      <thead>
-      <tr>
-          <th>Место работы</th>
-          <th>Должность</th>
-          <th>Год</th>
-      </tr>
-      </thead>
-      <tb>
-          <tr>
-              <td>GlockSoft</td>
-              <td>Go developer</td>
-              <td>2021-настоящее время</td>
-          </tr>
-      </tb>
-  </table>
-
-  <h2>Мои социальные сети</h2>
+  <h4>Мои социальные сети:</h4>
   <a href="https://www.linkedin.com/in/alexander-husarev-959821210/" target="_blank">LinkedIn</a>
   |
   <a href="https://m.facebook.com/profile.php?eav=AfYgVdSkmFWWvzmBzaCa6JZZp8Lgj-76OZgi3AaP9mJRP7uQMkwaVQTFiN8cW_zEUdI&paipv=0" target="_blank">FaceBook</a>
+</div>
+</div>
 
-  <h2>Связаться со мной</h2>
+<div class="card bg-yellow">
+    <h2>Мои хобби</h2>
+    <ul class="list">
+        <li>Путешествия</li>
+        <li>Спорт</li>
+    </ul>
+</div>
 
-  <form>
-      <div>
-          <label for="text">Ваше имя:</label>
-          <input type="text" id="text" placeholder="Введите имя">
-      </div>
-      <div>
-          <label for="email">Ваш email:</label>
-          <input type="email" id="email" placeholder="Введите email">
-      </div>
-      <div>
+<div class="card bg-red">
+    <h2>Опыт работы</h2>
+    <table class="table">
+        <tb>
+            <tr>
+                <td>GlockSoft</td>
+                <td>Go developer</td>
+                <td>2021-настоящее время</td>
+            </tr>
+        </tb>
+    </table>
+</div>
+
+  <form class="form">
+
+      <h2>Связаться со мной</h2>
+<div class="form-row">
+    <div class="form-group">
+        <label for="text">Ваше имя:</label>
+        <input type="text" id="text" placeholder="Введите имя">
+    </div>
+    <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" placeholder="Введите email">
+    </div>
+</div>
+      <div class="form-group">
           <label for="message">Ваше сообщение:</label>
-          <br>
           <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
       </div>
-      <button type="submit">Отправить!</button>
+      <button type="submit" class="btn">Отправить!</button>
   </form>
+
+</div>
 
 </body>
 </html>
